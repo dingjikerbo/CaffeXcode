@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0608B26F1E6FFE4100A5E733 /* CascadeCNN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0608B26C1E6FFE4100A5E733 /* CascadeCNN.cpp */; };
-		0608B2701E6FFE4100A5E733 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0608B26E1E6FFE4100A5E733 /* main.cpp */; };
 		0669E3EA1E6EAAAA00699DE0 /* caffe.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0669E3E81E6EAAAA00699DE0 /* caffe.pb.cc */; };
 		06D8CCC91E6921F70049E597 /* blob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06D8CB671E6921F70049E597 /* blob.cpp */; };
 		06D8CCCA1E6921F70049E597 /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06D8CB6B1E6921F70049E597 /* common.cpp */; };
@@ -177,7 +175,8 @@
 		06D8CD6E1E6921F70049E597 /* math_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06D8CCBA1E6921F70049E597 /* math_functions.cpp */; };
 		06D8CD6F1E6921F70049E597 /* signal_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06D8CCC01E6921F70049E597 /* signal_handler.cpp */; };
 		06D8CD701E6921F70049E597 /* upgrade_proto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06D8CCC21E6921F70049E597 /* upgrade_proto.cpp */; };
-		06D8CD721E6921F70049E597 /* gtest-all.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06D8CCC71E6921F70049E597 /* gtest-all.cpp */; };
+		A92B9F2D2052A03A00883A3C /* caffe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A92B9F2C2052A03900883A3C /* caffe.cpp */; };
+		A92B9F2F2052A0BC00883A3C /* gtest-all.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A92B9F2E2052A0BC00883A3C /* gtest-all.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -193,9 +192,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0608B26C1E6FFE4100A5E733 /* CascadeCNN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CascadeCNN.cpp; sourceTree = "<group>"; };
-		0608B26D1E6FFE4100A5E733 /* CascadeCNN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CascadeCNN.h; sourceTree = "<group>"; };
-		0608B26E1E6FFE4100A5E733 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		06296A0B1E696EB000476EDE /* cifar10_quick_solver.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cifar10_quick_solver.prototxt; sourceTree = "<group>"; };
 		06296A0C1E696EB100476EDE /* cifar10_quick_train_test.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cifar10_quick_train_test.prototxt; sourceTree = "<group>"; };
 		06296A0E1E696EB100476EDE /* data.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.mdb; sourceTree = "<group>"; };
@@ -576,8 +572,6 @@
 		06D8CCC11E6921F70049E597 /* signal_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = signal_handler.h; sourceTree = "<group>"; };
 		06D8CCC21E6921F70049E597 /* upgrade_proto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = upgrade_proto.cpp; sourceTree = "<group>"; };
 		06D8CCC31E6921F70049E597 /* upgrade_proto.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = upgrade_proto.hpp; sourceTree = "<group>"; };
-		06D8CCC61E6921F70049E597 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
-		06D8CCC71E6921F70049E597 /* gtest-all.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-all.cpp"; sourceTree = "<group>"; };
 		06D8CCC81E6921F70049E597 /* gtest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtest.h; sourceTree = "<group>"; };
 		06D8CD741E69431E0049E597 /* lenet_solver.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lenet_solver.prototxt; sourceTree = "<group>"; };
 		06D8CD751E69431E0049E597 /* lenet_train_test.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lenet_train_test.prototxt; sourceTree = "<group>"; };
@@ -590,6 +584,8 @@
 		06D9A14F1E6D196C001CE8A6 /* deploy.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deploy.prototxt; sourceTree = "<group>"; };
 		06D9A1501E6D196C001CE8A6 /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
 		06D9A1511E6D196C001CE8A6 /* mean2.binaryproto */ = {isa = PBXFileReference; lastKnownFileType = file; path = mean2.binaryproto; sourceTree = "<group>"; };
+		A92B9F2C2052A03900883A3C /* caffe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = caffe.cpp; path = CaffeMac/caffe.cpp; sourceTree = "<group>"; };
+		A92B9F2E2052A0BC00883A3C /* gtest-all.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-all.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -723,6 +719,7 @@
 		06D8CB531E69201B0049E597 = {
 			isa = PBXGroup;
 			children = (
+				A92B9F2C2052A03900883A3C /* caffe.cpp */,
 				0670EF5C1E6E588E0097C6FD /* Models */,
 				06D8CD731E6940D40049E597 /* data */,
 				06D8CB661E6921F70049E597 /* caffe */,
@@ -743,9 +740,6 @@
 		06D8CB5E1E69201B0049E597 /* CaffeMac */ = {
 			isa = PBXGroup;
 			children = (
-				0608B26C1E6FFE4100A5E733 /* CascadeCNN.cpp */,
-				0608B26D1E6FFE4100A5E733 /* CascadeCNN.h */,
-				0608B26E1E6FFE4100A5E733 /* main.cpp */,
 			);
 			path = CaffeMac;
 			sourceTree = "<group>";
@@ -1152,8 +1146,7 @@
 		06D8CCC51E6921F70049E597 /* gtest */ = {
 			isa = PBXGroup;
 			children = (
-				06D8CCC61E6921F70049E597 /* CMakeLists.txt */,
-				06D8CCC71E6921F70049E597 /* gtest-all.cpp */,
+				A92B9F2E2052A0BC00883A3C /* gtest-all.cpp */,
 				06D8CCC81E6921F70049E597 /* gtest.h */,
 			);
 			name = gtest;
@@ -1277,6 +1270,7 @@
 				06D8CD391E6921F70049E597 /* test_hdf5_output_layer.cpp in Sources */,
 				06D8CD521E6921F70049E597 /* test_reshape_layer.cpp in Sources */,
 				06D8CCE01E6921F70049E597 /* cudnn_relu_layer.cpp in Sources */,
+				A92B9F2D2052A03A00883A3C /* caffe.cpp in Sources */,
 				06D8CD101E6921F70049E597 /* split_layer.cpp in Sources */,
 				06D8CCCB1E6921F70049E597 /* data_transformer.cpp in Sources */,
 				06D8CD171E6921F70049E597 /* parallel.cpp in Sources */,
@@ -1336,7 +1330,6 @@
 				06D8CD3A1E6921F70049E597 /* test_hdf5data_layer.cpp in Sources */,
 				06D8CD691E6921F70049E597 /* db_lmdb.cpp in Sources */,
 				06D8CCF01E6921F70049E597 /* hdf5_output_layer.cpp in Sources */,
-				0608B26F1E6FFE4100A5E733 /* CascadeCNN.cpp in Sources */,
 				06D8CD091E6921F70049E597 /* scale_layer.cpp in Sources */,
 				06D8CCE11E6921F70049E597 /* cudnn_sigmoid_layer.cpp in Sources */,
 				06D8CD081E6921F70049E597 /* rnn_layer.cpp in Sources */,
@@ -1358,7 +1351,7 @@
 				06D8CD0E1E6921F70049E597 /* softmax_layer.cpp in Sources */,
 				06D8CCCD1E6921F70049E597 /* layer.cpp in Sources */,
 				06D8CCEA1E6921F70049E597 /* embed_layer.cpp in Sources */,
-				06D8CD721E6921F70049E597 /* gtest-all.cpp in Sources */,
+				A92B9F2F2052A0BC00883A3C /* gtest-all.cpp in Sources */,
 				06D8CD581E6921F70049E597 /* test_softmax_with_loss_layer.cpp in Sources */,
 				06D8CD151E6921F70049E597 /* window_data_layer.cpp in Sources */,
 				06D8CCF41E6921F70049E597 /* infogain_loss_layer.cpp in Sources */,
@@ -1406,7 +1399,6 @@
 				06D8CD491E6921F70049E597 /* test_mvn_layer.cpp in Sources */,
 				06D8CD001E6921F70049E597 /* parameter_layer.cpp in Sources */,
 				06D8CCDB1E6921F70049E597 /* crop_layer.cpp in Sources */,
-				0608B2701E6FFE4100A5E733 /* main.cpp in Sources */,
 				06D8CD1C1E6921F70049E597 /* adam_solver.cpp in Sources */,
 				06D8CD551E6921F70049E597 /* test_sigmoid_cross_entropy_loss_layer.cpp in Sources */,
 				06D8CD5D1E6921F70049E597 /* test_stochastic_pooling.cpp in Sources */,
