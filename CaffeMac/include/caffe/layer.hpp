@@ -269,13 +269,6 @@ class Layer {
     return true;
   }
 
-    /**
-     * @brief express whether this layer shares the data/diff between bottom and top
-     */
-    virtual inline bool is_sharing_data(int top_id, int bottom_id){return false;}
-    virtual inline bool is_sharing_diff(int top_id, int bottom_id){return false;}
-    
-    
   /**
    * @brief Specifies whether the layer should compute gradients w.r.t. a
    *        parameter at a particular index given by param_id.

@@ -265,9 +265,6 @@ class Blob {
   void ShareDiff(const Blob& other);
 
   bool ShapeEquals(const BlobProto& other);
-    
-  void SetDiffStorage(shared_ptr<SyncedMemory>& storage);
-  void SetDataStorage(shared_ptr<SyncedMemory>& storage);
 
  protected:
   shared_ptr<SyncedMemory> data_;

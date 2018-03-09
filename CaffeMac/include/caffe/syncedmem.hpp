@@ -47,6 +47,7 @@ inline void CaffeFreeHost(void* ptr, bool use_cuda) {
 #endif
 }
 
+
 /**
  * @brief Manages memory allocation and synchronization between the host (CPU)
  *        and device (GPU).
@@ -68,8 +69,6 @@ class SyncedMemory {
   SyncedHead head() { return head_; }
   size_t size() { return size_; }
 
-  void Resize(size_t new_size);
-    
 #ifndef CPU_ONLY
   void async_gpu_push(const cudaStream_t& stream);
 #endif

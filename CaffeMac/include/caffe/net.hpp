@@ -272,9 +272,6 @@ class Net {
   void BackwardDebugInfo(const int layer_id);
   /// @brief Helper for displaying debug info in Update.
   void UpdateDebugInfo(const int param_id);
-    
-  void MemoryOptimize();
-  void MemoryOptimize_v2();
 
   /// @brief The network name
   string name_;
@@ -338,11 +335,6 @@ class Net {
   vector<Callback*> after_forward_;
   vector<Callback*> before_backward_;
   vector<Callback*> after_backward_;
-    
-  /// Memory optimization related stuff.
-  bool optimize_memory_;
-  vector< shared_ptr<SyncedMemory> > shared_storage_;
-  std::set<string> excluded_blob_names_;
 
 DISABLE_COPY_AND_ASSIGN(Net);
 };
